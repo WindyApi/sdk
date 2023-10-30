@@ -19,7 +19,7 @@ public class WindyApiClientConfig {
     private static String secretKey;
 
     @Bean
-    public WindyApiClient easyApiClient(){
+    public WindyApiClient windyApiClient(){
         return new WindyApiClient(WindyApiClientConfig.gatewayAddress, WindyApiClientConfig.accessKey, WindyApiClientConfig.secretKey);
     }
 }
