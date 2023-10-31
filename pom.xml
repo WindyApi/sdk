@@ -6,7 +6,7 @@
 
     <groupId>top.whiteleaf03.api</groupId>
     <artifactId>WindyApi-sdk</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
