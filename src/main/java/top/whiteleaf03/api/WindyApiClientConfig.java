@@ -14,12 +14,12 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 @Data
 public class WindyApiClientConfig {
-    private static String gatewayAddress;
-    private static String accessKey;
-    private static String secretKey;
+    private String gatewayAddress;
+    private String accessKey;
+    private String secretKey;
 
     @Bean
     public WindyApiClient windyApiClient(){
-        return new WindyApiClient(WindyApiClientConfig.gatewayAddress, WindyApiClientConfig.accessKey, WindyApiClientConfig.secretKey);
+        return new WindyApiClient(gatewayAddress, accessKey, secretKey);
     }
 }
